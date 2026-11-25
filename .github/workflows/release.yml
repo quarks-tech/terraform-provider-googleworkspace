@@ -1,4 +1,4 @@
-# Builds, signs and publishes a GitHub Release on a "v*" tag.
+# Builds, signs and publishes a GitHub Release on a semver tag (v1.2.3, v1.2.3-rc1).
 # The Terraform Registry picks the release up through its webhook.
 #
 # Required repository secrets:
@@ -10,7 +10,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
 
 permissions:
   contents: write
