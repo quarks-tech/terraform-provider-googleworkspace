@@ -1,8 +1,6 @@
 module github.com/hashicorp/terraform-provider-googleworkspace
 
-go 1.23.0
-
-toolchain go1.24.1
+go 1.26.0
 
 require (
 	github.com/hashicorp/errwrap v1.1.0
@@ -11,7 +9,7 @@ require (
 	github.com/hashicorp/terraform-plugin-docs v0.21.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.16.0
 	github.com/mitchellh/go-homedir v1.1.0
-	golang.org/x/oauth2 v0.28.0
+	golang.org/x/oauth2 v0.38.0
 	google.golang.org/api v0.226.0
 )
 
